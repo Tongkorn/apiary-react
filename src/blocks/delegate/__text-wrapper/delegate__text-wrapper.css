@@ -1,0 +1,20 @@
+.delegate__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 453px;
+    box-sizing: border-box;
+    margin: 20px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .delegate__text-wrapper {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .delegate__text-wrapper {
+        max-width: 620px;
+    }
+}

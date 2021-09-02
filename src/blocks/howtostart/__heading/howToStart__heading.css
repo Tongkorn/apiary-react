@@ -1,0 +1,16 @@
+.howToStart__heading {
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    padding: 100px 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .howToStart__heading {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}

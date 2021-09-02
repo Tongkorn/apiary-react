@@ -1,0 +1,24 @@
+.header__menu-link {
+  font-family: Suisse Intl, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #616161;
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+
+.header__menu-link:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+@media screen and (max-width: 720px) {
+  .header__menu-link {
+    width: 100%;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    color: #000;
+  }
+}

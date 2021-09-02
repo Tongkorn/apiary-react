@@ -1,0 +1,15 @@
+.howToStart__text {
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    width: 40px;
+    height: 40px;
+    background: #ff9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 0 auto;
+}

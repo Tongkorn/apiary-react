@@ -1,0 +1,24 @@
+.footer__links-grid {
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-gap: 60px;
+    margin: 90px 0 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #dddddd;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer__links-grid {
+        justify-items: start;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: start;
+        align-items: end;
+        grid-gap: 24px;
+    }
+}

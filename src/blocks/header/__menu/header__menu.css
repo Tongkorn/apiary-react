@@ -1,0 +1,14 @@
+.header__menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .header__menu {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,25 @@
+.grid__item {
+    max-width: 288px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid__item {
+        max-width: 452px;
+    }
+    .grid__item:nth-child(1) {
+        grid-area: top;
+    }
+    .grid__item:nth-child(2) {
+        grid-area: left;
+    }
+    .grid__item:nth-child(3) {
+        grid-area: right;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .grid__item {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,14 @@
+.delegate__title {
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .delegate__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}

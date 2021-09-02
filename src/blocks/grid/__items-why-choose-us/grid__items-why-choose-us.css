@@ -1,0 +1,13 @@
+@media only screen and (min-width: 1024px) {
+    .grid__items-why-choose-us {
+        grid-template-areas:
+            "top left"
+            "right right";
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .grid__items-why-choose-us {
+        grid-template-areas: "top left right";
+    }
+}

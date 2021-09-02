@@ -1,0 +1,25 @@
+.content__text {
+    margin: 0 auto;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 40px 0 0;
+    max-width: 288px;
+    color: #616161;
+}
+
+@media only screen and (min-width: 1024px) {
+    .content__text {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 945px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .content__text {
+        max-width: 840px;
+    }
+}

@@ -1,0 +1,22 @@
+.grid__items {
+    grid-gap: 77px;
+    padding-bottom: 150px;
+    margin-top: 118px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid__items {
+        grid-template-areas:
+            "top top "
+            "left right";
+        grid-gap: 40px;
+        margin-top: 68px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .grid__items {
+        grid-template-areas: "top left right";
+        margin-top: 97px;
+    }
+}

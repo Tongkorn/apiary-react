@@ -1,0 +1,5 @@
+@media only screen and (min-width: 1024px) {
+    .hide__device_minwidth_1024 {
+        display: none;
+    }
+}

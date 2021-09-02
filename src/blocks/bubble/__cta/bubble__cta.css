@@ -1,0 +1,17 @@
+.bubble__cta {
+    margin: 30px 0 0;
+    align-self: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 360px) {
+    .bubble__cta {
+        width: 293px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .bubble__cta {
+        margin: 50px 0 0;
+    }
+}

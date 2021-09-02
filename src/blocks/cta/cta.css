@@ -1,0 +1,38 @@
+.cta {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 293px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: #ff9900;
+    border-radius: 40px;
+    border: 2px solid #ff9900;
+    padding: 20px 32px;
+    transition: all 0.3s;
+}
+
+.cta:hover {
+    background-color: #ff9900;
+    color: white;
+    cursor: pointer;
+}
+
+.cta_theme_dark {
+    background-color: #ff9900;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 40px;
+}
+
+.cta_theme_dark:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.cta:focus-visible {
+    outline: none;
+}

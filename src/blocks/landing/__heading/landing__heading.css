@@ -1,0 +1,24 @@
+.landing__heading {
+  width: 100%;
+  max-width: 288px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  margin: 0 0 60px;
+}
+
+.landing__heading span {
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  .landing__heading {
+    font-size: 48px;
+    line-height: 56px;
+    min-width: 620px;
+  }
+  .landing__heading span {
+    display: flex;
+  }
+}

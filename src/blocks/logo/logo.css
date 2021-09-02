@@ -1,0 +1,25 @@
+.logo__yandex {
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  margin-right: 13px;
+}
+
+.logo__practicum {
+  width: 105px;
+  height: 19px;
+}
+
+@media screen and (min-width: 600px) {
+  .logo__yandex {
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+  }
+
+  .logo__practicum {
+    width: 145px;
+    height: 27px;
+  }
+}

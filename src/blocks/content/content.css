@@ -1,0 +1,12 @@
+@import url("./__heading/content__heading.css");
+@import url("./__heading/_theme_dark/content__heading_theme_dark.css");
+@import url("./__text/content__text.css");
+@import url("./__text/_theme_dark/content__text_theme_dark.css");
+@import url("./__wrapper/content__wrapper.css");
+
+.content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

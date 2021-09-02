@@ -1,0 +1,17 @@
+.bubble__title {
+    margin: 0 0 28px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .bubble__title {
+        font-size: 48px;
+        line-height: 56px;
+        margin: 0 0 40px;
+    }
+}

@@ -1,0 +1,10 @@
+.footer__text {
+    margin: 0;
+}
+
+@media only screen and (min-width: 1440px) {
+    .footer__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

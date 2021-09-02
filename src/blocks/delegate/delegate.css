@@ -1,0 +1,13 @@
+@import url("./__wrapper/delegate__wrapper.css");
+@import url("./__text-wrapper/delegate__text-wrapper.css");
+@import url("./__title/delegate__title.css");
+@import url("./__subtitle/delegate__subtitle.css");
+@import url("./__image/delegate__image.css");
+
+.delegate {
+    width: 100%;
+    background: #e5e5e5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}

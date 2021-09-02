@@ -1,0 +1,15 @@
+.whatrequest__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .whatrequest__title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}

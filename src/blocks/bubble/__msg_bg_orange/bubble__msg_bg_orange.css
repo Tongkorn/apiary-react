@@ -1,0 +1,11 @@
+.bubble__msg_bg_orange {
+    background: #ff9900;
+    border-radius: 14px 14px 14px 0px;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .bubble__msg_bg_orange {
+        margin-right: 31px;
+    }
+}

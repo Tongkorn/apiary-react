@@ -1,0 +1,46 @@
+@import url("./__text-wrapper/landing__text-wrapper.css");
+@import url("./__heading/landing__heading.css");
+@import url("./__image/landing__image.css");
+@import url("./__button/landing__button.css");
+
+.landing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 16px;
+  flex-wrap: wrap;
+  min-height: 60vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing {
+    padding: 60px 40px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .landing {
+    padding: 80px 40px;
+    flex-wrap: nowrap;
+    position: relative;
+    min-height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .landing {
+    justify-content: space-between;
+    max-width: 1280px;
+    min-height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .landing {
+    padding: 0;
+    min-height: 80vh;
+  }
+}

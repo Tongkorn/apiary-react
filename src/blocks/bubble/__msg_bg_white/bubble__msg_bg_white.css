@@ -1,0 +1,10 @@
+.bubble__msg_bg_white {
+    background: #ffffff;
+    border-radius: 14px 14px 0px 14px;
+    margin: 14px 0 0;
+}
+@media only screen and (min-width: 1024px) {
+    .bubble__msg_bg_white {
+        margin: 40px 0 0 109px;
+    }
+}

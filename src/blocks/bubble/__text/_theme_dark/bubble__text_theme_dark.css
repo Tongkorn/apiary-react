@@ -1,0 +1,10 @@
+.bubble__text_theme_dark {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 1024px) {
+    .bubble__text_theme_dark {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

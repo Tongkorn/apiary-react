@@ -1,0 +1,10 @@
+.bubble__item-wrapper {
+    margin: 14px 0 0;
+    display: flex;
+}
+
+@media only screen and (min-width: 1024px) {
+    .bubble__item-wrapper {
+        margin: 40px 0 0;
+    }
+}

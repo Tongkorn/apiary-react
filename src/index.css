@@ -1,0 +1,28 @@
+@import url("./blocks/header/header.css");
+@import url("./blocks/logo/logo.css");
+@import url("./blocks/button/button.css");
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts.css");
+@import url("./blocks/root/root.css");
+@import url("./blocks/root/__container/root__container.css");
+@import url("./blocks/main/main.css");
+@import url("./blocks/cta/cta.css");
+
+@import url("./blocks/landing/landing.css");
+@import url("./blocks/heading-span/heading-span.css");
+
+@import url("./blocks/content/content.css");
+@import url("./blocks/content/_theme_dark/content_theme_dark.css");
+@import url("./blocks/grid/grid.css");
+@import url("./blocks/grid/__items-why-choose-us/grid__items-why-choose-us.css");
+@import url("./blocks/howtostart/howtostart.css");
+@import url("./blocks/bubble/bubble.css");
+@import url("./blocks/whatrequest/whatrequest.css");
+
+@import url("./blocks/delegate/delegate.css");
+@import url("./blocks/footer/footer.css");
+
+@import url("./blocks/show__device-mobile/show__device-mobile.css");
+@import url("./blocks/hide__device_minwidth_1024/hide__device_minwidth_1024.css");
+@import url("./blocks/box/box.css");
+@import url("./blocks/scrollbar-hidden/scrollbar-hidden.css");

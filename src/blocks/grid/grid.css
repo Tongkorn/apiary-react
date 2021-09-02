@@ -1,0 +1,9 @@
+@import url("./__items/grid__items.css");
+@import url("./__item/grid__item.css");
+@import url("./__item-image/grid__item-image.css");
+@import url("./__title/grid__title.css");
+@import url("./__subtitle/grid__subtitle.css");
+
+.grid {
+    display: grid;
+}

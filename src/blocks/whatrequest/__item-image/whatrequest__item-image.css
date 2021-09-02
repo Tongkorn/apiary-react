@@ -1,0 +1,21 @@
+.whatrequest__item-image {
+    max-width: 300px;
+    max-height: 156px;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin: 20px 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .whatrequest__item-image {
+        max-width: 452px;
+        max-height: 281px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .whatrequest__item-image {
+        max-width: 400px;
+        max-height: 281px;
+    }
+}

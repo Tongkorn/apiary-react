@@ -1,0 +1,11 @@
+.howToStart__cta {
+    display: flex;
+    margin: 0 auto 60px;
+    max-width: 293px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .howToStart__cta {
+        margin: 0 auto 100px;
+    }
+}

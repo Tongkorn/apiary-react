@@ -1,0 +1,14 @@
+.howToStart__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #616161;
+}
+
+@media only screen and (min-width: 1024px) {
+    .howToStart__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

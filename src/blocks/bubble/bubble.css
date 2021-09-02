@@ -1,0 +1,20 @@
+@import url("./__content/bubble__content.css");
+@import url("./__title/bubble__title.css");
+@import url("./__items/bubble__items.css");
+@import url("./__item-wrapper/bubble__item-wrapper.css");
+@import url("./__item/bubble__item.css");
+@import url("./__avatar/bubble__avatar.css");
+@import url("./__avatar-pic/bubble__avatar-pic.css");
+@import url("./__msg_bg_orange/bubble__msg_bg_orange.css");
+@import url("./__msg_bg_white/bubble__msg_bg_white.css");
+@import url("./__text/bubble__text.css");
+@import url("./__text/_theme_dark/bubble__text_theme_dark.css");
+@import url("./__cta/bubble__cta.css");
+
+.bubble {
+    width: 100%;
+    background: #e5e5e5;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,20 @@
+.header_menu-item {
+    margin: 0 32px 0 0;
+}
+
+.header__menu-item:last-child {
+    margin-right: 0;
+}
+
+
+@media screen and (min-width: 720px) {
+    .header__menu-item {
+        margin: 0 16px 0 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__menu-item {
+        margin-right: 20px;
+    }
+}

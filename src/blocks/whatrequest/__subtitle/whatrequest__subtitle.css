@@ -1,0 +1,15 @@
+.whatrequest__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ff9900;
+    margin: 20px 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .whatrequest__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
