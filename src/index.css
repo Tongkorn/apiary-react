@@ -20,6 +20,8 @@
 @import url("./blocks/whatrequest/whatrequest.css");
 
 @import url("./blocks/delegate/delegate.css");
+@import url("./blocks/tasks/tasks.css");
+@import url("./blocks/projects/project.css");
 @import url("./blocks/footer/footer.css");
 
 @import url("./blocks/show__device-mobile/show__device-mobile.css");

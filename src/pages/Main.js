@@ -7,6 +7,7 @@ import SectionDelegate from "../components/SectionDelegate";
 import SectionHowToStart from "../components/SectionHowToStart";
 import SectionBubble from "../components/SectionBubble";
 import SectionWhatRequests from "../components/SectionWhatRequests";
+import SectionProjects from "../components/SectionProjects";
 
 function Main({ onCtaClick }) {
   return (
@@ -33,9 +34,10 @@ function Main({ onCtaClick }) {
       <SectionWhyUseful />
       <SectionWhatRequests />
       <SectionBubble onCtaClick={onCtaClick} />
-      <SectionHowToStart  onCtaClick={onCtaClick}/>
+      <SectionHowToStart onCtaClick={onCtaClick} />
       <SectionWhyChooseUs />
       <SectionDelegate />
+      <SectionProjects onCtaClick={onCtaClick} />
     </main>
   );
 }
