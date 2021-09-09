@@ -88,7 +88,7 @@
 }
 
 .project__review-avatar {
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     background: #c4c4c4;
     border: 1px solid #ffffff;
@@ -152,6 +152,9 @@
 }
 
 @media only screen and (min-width: 640px) {
+    .project__text-wrapper {
+        margin: 20px;
+    }
     .project__details {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 365px;

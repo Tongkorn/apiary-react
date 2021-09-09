@@ -1,20 +1,20 @@
 import React from 'react';
-import project1 from "../images/projects/ant.png";
-import project2 from "../images/projects/prim-u.png";
+import project18 from "../images/projects/image18.svg";
+import project19 from "../images/projects/image19.svg";
 import project1reviewer from "../images/projects/review-avatar.png";
 
-function ProjectWebDev() {
+function ProjectDataSci() {
     return (
-        <div data-aos="fade-right"
+        <div data-aos="fade-left"
             data-aos-offset="500"
             data-aos-duration="500">
             <div className="project">
                 <div className="project__details">
-                    <img src={project1} alt="project" className="project__image" />
+                    <img src={project18} alt="project" className="project__image" />
                     <div className="project__text-wrapper">
-                        <h3 className="project__title">Ant Robotics</h3>
-                        <p className="project__subtitle">Landing page website for the company that cakes automated
-                            logistics robots from Oakland, CA</p>
+                        <h3 className="project__title">Norbu, DA</h3>
+                        <p className="project__subtitle">Norbu Stress Control is the first anti-stress app that teaches to manage stress and emotions on the physical level.</p>
+                        <p className="project__subtitle">Task: to calculate main product metrics, research possible reasons for users behaviour such as retention, payments, app removal, etc. and analyze User journey behaviour.</p>
                         <p className="project__date">May 2021</p>
                         <p className="project__link">Visit Website →</p>
                     </div>
@@ -60,12 +60,11 @@ function ProjectWebDev() {
 
             <div className="project">
                 <div className="project__details">
-                    <img src={project2} alt="prim-u project" className="project__image" />
+                    <img src={project19} alt="prim-u project" className="project__image" />
                     <div className="project__text-wrapper">
-                        <h3 className="project__title">Prim-U</h3>
-                        <p className="project__subtitle">Main entry page for the first on-demand beauty platform
-                            from
-                            the South Africa</p>
+                        <h3 className="project__title">Allcorrect, DS</h3>
+                        <p className="project__subtitle">Allcorrect Games provides video game localization, localization testing, voiceovers, game art, and playable ads.</p>
+                        <p className="project__subtitle">Task: to analyze apps reviews about localization quality on marketplaces like App Store / Google Play / Steam.</p>
                         <p className="project__date">May 2021</p>
                         <p className="project__link">Visit Website →</p>
                     </div>
@@ -114,4 +113,4 @@ function ProjectWebDev() {
     )
 }
 
-export default ProjectWebDev;
+export default ProjectDataSci;
