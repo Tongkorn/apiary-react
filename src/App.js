@@ -65,7 +65,7 @@ function App() {
           <Header onCtaClick={handleSetFirstOpen} />
           <ScrollToTop />
           <Switch>
-            <Route exact path='/*'>
+            <Route exact path='/'>
               <Main onCtaClick={handleSetFirstOpen} />
             </Route>
             <Route exact path='/webdev'>
