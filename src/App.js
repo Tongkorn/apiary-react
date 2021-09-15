@@ -74,7 +74,7 @@ function App() {
             <Route exact path='/data-science'>
               <Datasci onCtaClick={handleSetFirstOpen} />
             </Route>
-            <Route exact path='/'>
+            <Route path='/'>
               <Main onCtaClick={handleSetFirstOpen} />
             </Route>
           </Switch>
