@@ -29,7 +29,7 @@ function Footer() {
                     </p>
                     <p className="footer__text footer__text-copyright">&#169; 2020 Practicum by Yandex</p>
                     <div className="footer__creators" id="creators">
-                        <p className="footer__creators-name">Student Name, Student Name, Student Name, Student Name</p>
+                        <p className="footer__creators-name">Tongkorn Pawananan</p>
                     </div>
                 </div>
             </div>

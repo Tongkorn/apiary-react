@@ -1,10 +1,9 @@
 import React from "react";
 import ContentDelegate from "./ContentDelegate";
-import { contentDelegateTasks } from "../data";
 
-function SectionDelegate() {
+function SectionDelegate(props) {
     return (
-        <ContentDelegate content={contentDelegateTasks} id="projects" />
+        <ContentDelegate content={props.content} id="projects" />
     );
 }
 

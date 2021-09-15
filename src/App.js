@@ -1,10 +1,14 @@
 import React, { useEffect, useRef, useCallback } from "react";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import ModalWithForm from "./components/ModalWithForm";
 import styled from "styled-components";
-
 import Header from "./components/Header";
+import Webdev from "./pages/Webdev";
+import DataAnalysis from "./pages/DataAnalysis";
+import Datasci from "./pages/Datasci";
+import ScrollToTop from "./components/ScrollToTop";
 
 const ModalOverlay = styled.div`
   width: 100%;
@@ -55,31 +59,45 @@ function App() {
   }, [closeOnEsc]);
 
   return (
-    <div className="root">
-      <div className="root__container">
-        <Header onCtaClick={handleSetFirstOpen}/>
-
-        <Main onCtaClick={handleSetFirstOpen} />
-
-        <Footer />
-        {firstOpen ? (
-          <ModalOverlay
-            onMouseDown={closeOnOverlay}
-            ref={modalref}
-            data-aos="zoom-out"
-            data-aos-duration="400"
-          >
-            <ModalWithForm
-              isOpen={handleSetFirstOpen}
-              isClose={handleSetFirstClose}
-              setFirstOpen={handleSetFirstClose}
-              firstOpen={firstOpen}
-              onSubmit={handleFormSubmit}
-            />
-          </ModalOverlay>
-        ) : null}
+    <BrowserRouter>
+      <div className="root">
+        <div className="root__container">
+          <Header onCtaClick={handleSetFirstOpen} />
+          <ScrollToTop />
+          <Switch>
+            <Route exact path='/'>
+              <Main onCtaClick={handleSetFirstOpen} />
+            </Route>
+            <Route exact path='/webdev'>
+              <Webdev onCtaClick={handleSetFirstOpen} />
+            </Route>
+            <Route exact path='/data-analyst'>
+              <DataAnalysis onCtaClick={handleSetFirstOpen} />
+            </Route>
+            <Route exact path='/data-science'>
+              <Datasci onCtaClick={handleSetFirstOpen} />
+            </Route>
+          </Switch>
+          <Footer />
+          {firstOpen ? (
+            <ModalOverlay
+              onMouseDown={closeOnOverlay}
+              ref={modalref}
+              data-aos="zoom-out"
+              data-aos-duration="400"
+            >
+              <ModalWithForm
+                isOpen={handleSetFirstOpen}
+                isClose={handleSetFirstClose}
+                setFirstOpen={handleSetFirstClose}
+                firstOpen={firstOpen}
+                onSubmit={handleFormSubmit}
+              />
+            </ModalOverlay>
+          ) : null}
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

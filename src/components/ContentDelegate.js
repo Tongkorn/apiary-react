@@ -1,16 +1,16 @@
 import React from "react";
 
-function ContentDelegate(props) {
+function ContentDelegate({content}) {
     return (
-        <section className="delegate" id={`${props.id}`}>
+        <section className="delegate" id={`${content.id}`}>
             <div className="delegate__wrapper">
                 <div className="delegate__text-wrapper">
                     <h2 className="delegate__title">
-                        {props.content.title}
+                        {content.title}
                     </h2>
-                    <p className="delegate__subtitle">{props.content.subtitle}</p>
+                    <p className="delegate__subtitle">{content.subtitle}</p>
                 </div>
-                <img src={props.content.image} alt="people with laptop" className="delegate__image" />
+                <img src={content.image} alt="people with laptop" className="delegate__image" />
             </div>
         </section>
     )

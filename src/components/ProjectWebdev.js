@@ -5,9 +5,7 @@ import project1reviewer from "../images/projects/review-avatar.png";
 
 function ProjectWebDev() {
     return (
-        <div data-aos="fade-right"
-            data-aos-offset="500"
-            data-aos-duration="500">
+        <div>
             <div className="project">
                 <div className="project__details">
                     <img src={project1} alt="project" className="project__image" />

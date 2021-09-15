@@ -2,12 +2,12 @@ import React from "react";
 import meditateGirl from "../images/meditate-girl.png";
 import SectionWhyUseful from "../components/SectionWhyUseful";
 import SectionWhyChooseUs from "../components/SectionWhyChooseUs";
-
 import SectionDelegate from "../components/SectionDelegate";
 import SectionHowToStart from "../components/SectionHowToStart";
 import SectionBubble from "../components/SectionBubble";
 import SectionWhatRequests from "../components/SectionWhatRequests";
 import SectionProjects from "../components/SectionProjects";
+import { contentDelegateTasks } from "../data";
 
 function Main({ onCtaClick }) {
   return (
@@ -36,7 +36,7 @@ function Main({ onCtaClick }) {
       <SectionBubble onCtaClick={onCtaClick} />
       <SectionHowToStart onCtaClick={onCtaClick} />
       <SectionWhyChooseUs />
-      <SectionDelegate />
+      <SectionDelegate content={contentDelegateTasks} />
       <SectionProjects onCtaClick={onCtaClick} />
     </main>
   );
