@@ -1,5 +1,5 @@
 # Project Link
-This is the further developement version.
+This is the further development version.
 
 [Apiary](https://Tongkorn.github.io/apiary)
 
