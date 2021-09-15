@@ -3,7 +3,7 @@ import { contentHowToStart } from "../data.js";
 
 function SectionHowToStart({ onCtaClick }) {
     return (
-        <section className="content" id="howtostart">
+        <section className="content" id="howtostart" name="howtostart">
             <div className="content__wrapper">
                 <h2 className="howToStart__heading">{contentHowToStart.title}</h2>
                 <div className="grid grid__items howToStart__grid-items">

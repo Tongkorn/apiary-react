@@ -18,15 +18,15 @@ function SectionProjects({ onCtaClick }) {
 
     return (
         <Router>
-            <section className="tasks">
+            <section className="tasks" id="projects">
                 <div className="tasks__wrapper">
                     <div className="tasks__buttons">
                         <Link className={`cta task__button ${active === 'webdev' ? 'cta_theme_dark' : ""}`}
-                            onClick={() => setButtonActive('webdev')} to="/webdev">Web development</Link>
+                            onClick={() => setButtonActive('webdev')} to="/webdev" smooth="true">Web development</Link>
                         <Link className={`cta task__button ${active === 'dataAnalysis' ? 'cta_theme_dark' : ""}`}
-                            onClick={() => setButtonActive('dataAnalysis')} to="/data-analyst">Data analysis</Link>
+                            onClick={() => setButtonActive('dataAnalysis')} to="/data-analyst" smooth="true">Data analysis</Link>
                         <Link className={`cta task__button ${active === 'datasci' ? 'cta_theme_dark' : ""}`}
-                            onClick={() => setButtonActive('datasci')} to="/data-science">Datascience</Link>
+                            onClick={() => setButtonActive('datasci')} to="/data-science" smooth="true">Datascience</Link>
                     </div>
                     <Switch>
                         <Route exact path="/webdev">

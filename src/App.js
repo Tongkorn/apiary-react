@@ -59,15 +59,12 @@ function App() {
   }, [closeOnEsc]);
 
   return (
-    // <Router basename="/">
+    <Router>
       <div className="root">
         <div className="root__container">
           <Header onCtaClick={handleSetFirstOpen} />
           <ScrollToTop />
           <Switch>
-            <Route exact path='/'>
-              <Main onCtaClick={handleSetFirstOpen} />
-            </Route>
             <Route exact path='/webdev'>
               <Webdev onCtaClick={handleSetFirstOpen} />
             </Route>
@@ -76,6 +73,9 @@ function App() {
             </Route>
             <Route exact path='/data-science'>
               <Datasci onCtaClick={handleSetFirstOpen} />
+            </Route>
+            <Route exact path='/'>
+              <Main onCtaClick={handleSetFirstOpen} />
             </Route>
           </Switch>
           <Footer />
@@ -97,7 +97,7 @@ function App() {
           ) : null}
         </div>
       </div>
-    // </Router>
+    </Router>
   );
 }
 

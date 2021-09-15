@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logoY from "../images/logo-y.svg";
 import logoPracticum from "../images/logo-practicum.png";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Header({ onCtaClick }) {
   const [open, setOpen] = useState(false);
@@ -17,17 +17,14 @@ function Header({ onCtaClick }) {
             />
           </Link>
         </div>
-        <button
-          className="button__hamburger"
-          onClick={() => setOpen(!open)}
-        ></button>
+        <button className="button__hamburger" onClick={() => setOpen(!open)}></button>
         <nav>
           <ul className="header__menu">
-            <li className="header__menu-item"> <a href="#whatrequest" className="header__menu-link">We can help!</a></li>
-            <li className="header__menu-item"> <a href="#about" className="header__menu-link">About</a></li>
-            <li className="header__menu-item"> <a href="#howtostart" className="header__menu-link">How to start</a></li>
-            <li className="header__menu-item"> <a href="#projects" className="header__menu-link">Projects</a></li>
-            <li className="header__menu-item"> <a href="#contacts" className="header__menu-link">Contacts</a></li>
+            <Link className="header__menu-link" smooth="true" to="#whatrequest">We can help!</Link>
+            <Link className="header__menu-link" smooth="true" to="#about">About</Link>
+            <Link className="header__menu-link" smooth="true" to="#howtostart">How to start</Link>
+            <Link className="header__menu-link" smooth="true" to="#projects">Projects</Link>
+            <Link className="header__menu-link" smooth="true" to="#contacts">Contacts</Link>
           </ul>
         </nav>
         <button className="button" onClick={onCtaClick}>Delegate a task</button>
