@@ -15,7 +15,7 @@ function Main({ onCtaClick }) {
       <section className="landing">
         <div className="landing__text-wrapper">
           <h1 className="landing__heading">
-            <span>Your task. Done by data and web development students. Test</span>
+            <span>Your task. Done by data and web development students.</span>
             <span className="heading_span">For free!</span>
           </h1>
           <button className="cta cta_theme_dark landing__button" onClick={onCtaClick}>

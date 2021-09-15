@@ -10,7 +10,7 @@ function Header({ onCtaClick, page }) {
     <header className="header" id="nav">
       <div className="header__content-wrapper">
         <div className="logo">
-          <Link to="/main"><img src={logoY} alt="Yandex logo" className="logo__yandex" />
+          <Link to="/home"><img src={logoY} alt="Yandex logo" className="logo__yandex" />
             <img
               src={logoPracticum}
               alt="Practicum logo"
@@ -29,7 +29,7 @@ function Header({ onCtaClick, page }) {
           </ul>
           }
           {page === "profession" && <nav>
-            <Link className="header__menu-item header__menu-link " smooth="true" to="/main">Back to home</Link>
+            <Link className="header__menu-item header__menu-link " smooth="true" to="/home">Back to homepage</Link>
             <Link className="header__menu-item header__menu-link " smooth="true" to="#projects">Students’ projects</Link>
           </nav>
           }

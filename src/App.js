@@ -63,7 +63,7 @@ function App() {
       <div className="root">
         <div className="root__container">
           <Switch>
-            <Route path='/main'>
+            <Route path='/home'>
               <Header onCtaClick={handleSetFirstOpen} />
             </Route>
             <Route path='/'>
@@ -81,11 +81,11 @@ function App() {
             <Route exact path='/data-science'>
               <Datasci onCtaClick={handleSetFirstOpen} />
             </Route>
-            <Route exact path='/main'>
+            <Route exact path='/home'>
               <Main onCtaClick={handleSetFirstOpen} />
             </Route>
             <Route path='/'>
-              <Redirect to="/main" />
+              <Redirect to="/home" />
             </Route>
           </Switch>
           <Footer />
@@ -93,7 +93,7 @@ function App() {
             <ModalOverlay
               onMouseDown={closeOnOverlay}
               ref={modalref}
-              data-aos="zoom-out"
+              data-aos="fade-in"
               data-aos-duration="400"
             >
               <ModalWithForm
