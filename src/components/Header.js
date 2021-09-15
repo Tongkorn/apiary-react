@@ -3,7 +3,8 @@ import logoY from "../images/logo-y.svg";
 import logoPracticum from "../images/logo-practicum.png";
 import { HashLink as Link } from "react-router-hash-link";
 
-function Header({ onCtaClick }) {
+function Header({ onCtaClick, page }) {
+  console.log(page);
   const [open, setOpen] = useState(false);
   return (
     <header className="header" id="nav">
@@ -19,13 +20,19 @@ function Header({ onCtaClick }) {
         </div>
         <button className="button__hamburger" onClick={() => setOpen(!open)}></button>
         <nav>
-          <ul className="header__menu">
-            <Link className="header__menu-link" smooth="true" to="#whatrequest">We can help!</Link>
-            <Link className="header__menu-link" smooth="true" to="#about">About</Link>
-            <Link className="header__menu-link" smooth="true" to="#howtostart">How to start</Link>
-            <Link className="header__menu-link" smooth="true" to="#projects">Projects</Link>
-            <Link className="header__menu-link" smooth="true" to="#contacts">Contacts</Link>
+          {page !== "profession" && <ul className="header__menu">
+            <Link className="header__menu-item header__menu-link " smooth="true" to="#whatrequest">We can help!</Link>
+            <Link className="header__menu-item header__menu-link " smooth="true" to="#about">About</Link>
+            <Link className="header__menu-item header__menu-link " smooth="true" to="#howtostart">How to start</Link>
+            <Link className="header__menu-item header__menu-link " smooth="true" to="#projects">Projects</Link>
+            <Link className="header__menu-item header__menu-link " smooth="true" to="#contacts">Contacts</Link>
           </ul>
+          }
+          {page === "profession" && <nav>
+            <Link className="header__menu-item header__menu-link " smooth="true" to="/main">Back to home</Link>
+            <Link className="header__menu-item header__menu-link " smooth="true" to="#projects">Students’ projects</Link>
+          </nav>
+          }
         </nav>
         <button className="button" onClick={onCtaClick}>Delegate a task</button>
       </div>

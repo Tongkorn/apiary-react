@@ -11,7 +11,7 @@ import { contentDelegateTasks } from "../data";
 
 function Main({ onCtaClick }) {
   return (
-    <main className="main" id="main">
+    <main className="main" id="main" data-aos="fade-in">
       <section className="landing">
         <div className="landing__text-wrapper">
           <h1 className="landing__heading">

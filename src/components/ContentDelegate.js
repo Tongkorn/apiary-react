@@ -1,9 +1,9 @@
 import React from "react";
 
-function ContentDelegate({content}) {
+function ContentDelegate({ content, id }) {
     return (
-        <section className="delegate" id={`${content.id}`}>
-            <div className="delegate__wrapper">
+        <section className="delegate">
+            <div className="delegate__wrapper" id={id}>
                 <div className="delegate__text-wrapper">
                     <h2 className="delegate__title">
                         {content.title}

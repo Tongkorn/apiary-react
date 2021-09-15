@@ -62,7 +62,14 @@ function App() {
     <Router>
       <div className="root">
         <div className="root__container">
-          <Header onCtaClick={handleSetFirstOpen} />
+          <Switch>
+            <Route path='/main'>
+              <Header onCtaClick={handleSetFirstOpen} />
+            </Route>
+            <Route path='/'>
+              <Header page="profession" onCtaClick={handleSetFirstOpen} />
+            </Route>
+          </Switch>
           <ScrollToTop />
           <Switch>
             <Route exact path='/webdev'>
