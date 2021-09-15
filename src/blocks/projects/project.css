@@ -151,6 +151,15 @@
     grid-template-rows: 1fr;
 }
 
+.project__page {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.project__page-text-wrapper {
+    text-align: center;
+    align-items: center;
+}
+
 @media only screen and (min-width: 640px) {
     .project__text-wrapper {
         margin: 20px;
@@ -204,6 +213,14 @@
         display: grid;
         grid-gap: 40px;
         grid-template-columns: 1fr 1fr;
+    }
+    .project__page {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .project__page-text-wrapper {
+        text-align: start;
+        align-items: flex-start;
     }
 }
 

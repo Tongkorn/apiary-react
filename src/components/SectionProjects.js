@@ -10,10 +10,10 @@ import ProjectDataSci from "./ProjectDataSci";
 import ProjectWebDev from "./ProjectWebdev";
 
 function SectionProjects({ onCtaClick }) {
-    const [activeTab, setActiveTab] = React.useState('webdev');
+    const [active, setActive] = React.useState('webdev');
 
-    function setButtonActive(activeClass) {
-        setActiveTab(activeClass)
+    function setButtonActive(activeButton) {
+        setActive(activeButton)
     }
 
     return (
@@ -21,11 +21,11 @@ function SectionProjects({ onCtaClick }) {
             <section className="tasks">
                 <div className="tasks__wrapper">
                     <div className="tasks__buttons">
-                        <Link className={`cta task__button ${activeTab === 'webdev' ? 'cta_theme_dark' : ""}`}
+                        <Link className={`cta task__button ${active === 'webdev' ? 'cta_theme_dark' : ""}`}
                             onClick={() => setButtonActive('webdev')} to="/webdev">Web development</Link>
-                        <Link className={`cta task__button ${activeTab === 'dataAnalysis' ? 'cta_theme_dark' : ""}`}
+                        <Link className={`cta task__button ${active === 'dataAnalysis' ? 'cta_theme_dark' : ""}`}
                             onClick={() => setButtonActive('dataAnalysis')} to="/data-analyst">Data analysis</Link>
-                        <Link className={`cta task__button ${activeTab === 'datasci' ? 'cta_theme_dark' : ""}`}
+                        <Link className={`cta task__button ${active === 'datasci' ? 'cta_theme_dark' : ""}`}
                             onClick={() => setButtonActive('datasci')} to="/data-science">Datascience</Link>
                     </div>
                     <Switch>

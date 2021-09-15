@@ -134,18 +134,93 @@ export const contentWhatRequest = {
       image: webDev,
       title: "Web development",
       subtitle: "#programming",
+      link: "webdev"
     },
     {
       position: "2",
       image: dataAnalyst,
       title: "Data analyst",
       subtitle: "#analysis",
+      link: "data-analyst"
     },
     {
       position: "3",
       image: dataSci,
       title: "Data science",
       subtitle: "#analysis",
+      link: "data-science"
     },
   ]
 }
+
+export const contentWebdevProject = {
+  mainTitle: "What web development requests can we help with?",
+  mainSubtitle: "Practicum by Yandex students are ready to build your website from your design or if necessary, we can ask our colleagues from the design team to create a unique design for your company and a website based on this design.",
+  title: "Check out the web development projects our students have done so far",
+  image: peopleWithLaptop,
+  items: [
+    {
+      boxNum: "1",
+      boxTitle: "Create a one page website from scratch",
+      boxSubtitle: "We can create a landing page for a new project or refresh an existing one",
+    },
+    {
+      boxNum: "2",
+      boxTitle: "We make up your website design",
+      boxSubtitle: "If you already have a website design, we will gladly prepare an adaptive layout.",
+    },
+    {
+      boxNum: "3",
+      boxTitle: "Let's create a complex multi-page website for the project",
+      boxSubtitle: "We are able to work on highly complex websites with deeply nested pages.",
+    },
+  ]
+};
+
+export const contentDataAnalysisProject = {
+  mainTitle: "What data analysis requests can we help with?",
+  mainSubtitle: "Practicum by Yandex students are ready to undertake analytics of the data provided by the company or if necessary, are ready to conduct market research to obtain the necessary data for analysis.",
+  title: "Check out the web development projects our students have done so far",
+  image: peopleWithLaptop,
+  items: [
+    {
+      boxNum: "1",
+      boxTitle: "We analyze pricing",
+      boxSubtitle: "We will analyze your data, competitors' open data, market conditions, and current trends. We will share our conclusions and recommendations regarding the pricing policy of your company.",
+    },
+    {
+      boxNum: "2",
+      boxTitle: "We can build a recommendation model",
+      boxSubtitle: "We will customize issued recommendations. We will analyze data on the behavior of your clients. You will be able to quickly understand what to offer so that they take the suggested action.",
+    },
+    {
+      boxNum: "3",
+      boxTitle: "We can segment your customer base",
+      boxSubtitle: "We will divide users into segments, select a core, segment them by interests, and give recommendations regarding the most popular content for each group to increase their retention or formulate a discount policy.",
+    },
+  ]
+};
+
+export const contentDataSciProject = {
+  mainTitle: "What data science requests can we help with?",
+  mainSubtitle: "Practicum by Yandex students are ready to undertake analytics of the data provided by the company or if necessary, are ready to conduct market research to obtain the necessary data for analysis.",
+  title: "Check out the web development projects our students have done so far",
+  image: peopleWithLaptop,
+  items: [
+    {
+      boxNum: "1",
+      boxTitle: "Text recognition",
+      boxSubtitle: "We handle photo recognition of texts of different languages ranging from English to Arabic.",
+    },
+    {
+      boxNum: "2",
+      boxTitle: "Checking and improving existing algorithms",
+      boxSubtitle: "We test the algorithms available to your company, check them using your data or open data, and suggest hypotheses for improvement.",
+    },
+    {
+      boxNum: "3",
+      boxTitle: "Recognition of audio and video files",
+      boxSubtitle: "We can recognize files of different types, create algorithms for finding errors in them, and generating reports.",
+    },
+  ]
+};

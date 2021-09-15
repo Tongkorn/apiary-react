@@ -2,6 +2,7 @@
 @import url("./__heading/landing__heading.css");
 @import url("./__image/landing__image.css");
 @import url("./__button/landing__button.css");
+@import url("./__subheading/landing__subheading.css");
 
 .landing {
   display: flex;
