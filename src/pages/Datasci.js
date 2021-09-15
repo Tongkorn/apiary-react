@@ -22,7 +22,7 @@ function Datasci({ onCtaClick }) {
             </section>
             <div className="grid grid__items">
                 {contentDataSciProject.items.map(item => (
-                    <Box key={item.boxNum} id="box-datasci">
+                    <Box key={item.boxNum}>
                         <h2 className="box-num">{item.boxNum}</h2>
                         <p className="box__title" > {item.boxTitle}</p>
                         <p className="box__subtitle">{item.boxSubtitle}</p>

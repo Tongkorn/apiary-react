@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 
 function Box(props) {
     return (
-        <div className="grid__item box">
-            {props.link && <Link className="link" to={props.link}>{props.children}</Link>}
-            {!props.link && props.children}
-        </div >
+        <Link className={`grid__item box link  ${!props.link ? 'disabled-link' : ''}`} to={props.link}>{props.children}</Link>
     )
 }
 export default Box;
