@@ -1,6 +1,7 @@
 # Project Link
+This is the further development version.
 
-[Apiary landing page](https://Tongkorn.github.io/apiary)
+[Apiary](https://Tongkorn.github.io/apiary)
 
 ## Getting Started with Create React App
 
