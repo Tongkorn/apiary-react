@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Footer() {
     return (
@@ -6,7 +7,7 @@ function Footer() {
             <div className="footer__wrapper">
                 <ul className="footer__links-grid footer__links">
                     <li>
-                        <a href="#about" className="footer__link footer__text-aboutus">About us</a>
+                        <Link to="/#about" className="footer__link footer__text-aboutus">About us</Link>
                     </li>
                     <li>
                         <a href="#nav" className="footer__link footer__text-totop">Back to top &#8593;</a>
@@ -29,7 +30,7 @@ function Footer() {
                     </p>
                     <p className="footer__text footer__text-copyright">&#169; 2020 Practicum by Yandex</p>
                     <div className="footer__creators" id="creators">
-                        <p className="footer__creators-name">Tongkorn Pawananan</p>
+                        <p className="footer__creators-name">Made by Tongkorn Pawananan, Arnold Ndiwalana</p>
                     </div>
                 </div>
             </div>
