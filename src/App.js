@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback } from "react";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import ModalWithForm from "./components/ModalWithForm";
@@ -59,7 +59,7 @@ function App() {
   }, [closeOnEsc]);
 
   return (
-    <BrowserRouter basename="/">
+    // <Router basename="/">
       <div className="root">
         <div className="root__container">
           <Header onCtaClick={handleSetFirstOpen} />
@@ -97,7 +97,7 @@ function App() {
           ) : null}
         </div>
       </div>
-    </BrowserRouter>
+    // </Router>
   );
 }
 
