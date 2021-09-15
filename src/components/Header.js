@@ -9,7 +9,7 @@ function Header({ onCtaClick }) {
     <header className="header" id="nav">
       <div className="header__content-wrapper">
         <div className="logo">
-          <Link to="/"><img src={logoY} alt="Yandex logo" className="logo__yandex" />
+          <Link to="/main"><img src={logoY} alt="Yandex logo" className="logo__yandex" />
             <img
               src={logoPracticum}
               alt="Practicum logo"

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback } from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import ModalWithForm from "./components/ModalWithForm";
@@ -74,8 +74,11 @@ function App() {
             <Route exact path='/data-science'>
               <Datasci onCtaClick={handleSetFirstOpen} />
             </Route>
-            <Route path='/'>
+            <Route exact path='/main'>
               <Main onCtaClick={handleSetFirstOpen} />
+            </Route>
+            <Route path='/'>
+              <Redirect to="/main" />
             </Route>
           </Switch>
           <Footer />
