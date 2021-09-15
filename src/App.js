@@ -59,7 +59,7 @@ function App() {
   }, [closeOnEsc]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <div className="root">
         <div className="root__container">
           <Header onCtaClick={handleSetFirstOpen} />
