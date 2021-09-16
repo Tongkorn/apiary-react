@@ -150,7 +150,7 @@ function ModalWithForm(props) {
     }
 
     if (!secondOpen) {
-        return (<ModalWrapperStyled data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="400" className="scrollbar-hidden">
+        return (<ModalWrapperStyled data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="300" className="scrollbar-hidden">
             <CloseModalButtonStyled
                 aria-label='Close modal'
                 onClick={handleCloseModals}

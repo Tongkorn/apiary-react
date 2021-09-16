@@ -7,7 +7,7 @@ import Box from "../components/Box";
 
 function Datasci({ onCtaClick }) {
     return (
-        <main className="main" id="main">
+        <main className="main" id="main" data-aos="fade-in" data-aos-delay="400">
             <section className="landing project__page">
                 <div className="landing__text-wrapper project__page-text-wrapper">
                     <h1 className="landing__heading">

@@ -134,21 +134,21 @@ export const contentWhatRequest = {
       image: webDev,
       title: "Web development",
       subtitle: "#programming",
-      link: "webdev"
+      link: "professional/webdev"
     },
     {
       position: "2",
       image: dataAnalyst,
       title: "Data analyst",
       subtitle: "#analysis",
-      link: "data-analyst"
+      link: "professional/data-analyst"
     },
     {
       position: "3",
       image: dataSci,
       title: "Data science",
       subtitle: "#analysis",
-      link: "data-science"
+      link: "professional/data-science"
     },
   ]
 }

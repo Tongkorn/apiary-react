@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback } from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import ModalWithForm from "./components/ModalWithForm";
@@ -63,22 +63,22 @@ function App() {
       <div className="root">
         <div className="root__container">
           <Switch>
-            <Route path='/home'>
-              <Header onCtaClick={handleSetFirstOpen} />
+            <Route path='/professional/*'>
+              <Header page="professional" onCtaClick={handleSetFirstOpen} />
             </Route>
             <Route path='/'>
-              <Header page="profession" onCtaClick={handleSetFirstOpen} />
+              <Header onCtaClick={handleSetFirstOpen} />
             </Route>
           </Switch>
           <ScrollToTop />
           <Switch>
-            <Route exact path='/webdev'>
+            <Route exact path='/professional/webdev'>
               <Webdev onCtaClick={handleSetFirstOpen} />
             </Route>
-            <Route exact path='/data-analyst'>
+            <Route exact path='/professional/data-analyst'>
               <DataAnalysis onCtaClick={handleSetFirstOpen} />
             </Route>
-            <Route exact path='/data-science'>
+            <Route exact path='/professional/data-science'>
               <Datasci onCtaClick={handleSetFirstOpen} />
             </Route>
             <Route exact path='/home'>
@@ -92,10 +92,7 @@ function App() {
           {firstOpen ? (
             <ModalOverlay
               onMouseDown={closeOnOverlay}
-              ref={modalref}
-              data-aos="fade-in"
-              data-aos-duration="400"
-            >
+              ref={modalref}>
               <ModalWithForm
                 isOpen={handleSetFirstOpen}
                 isClose={handleSetFirstClose}
