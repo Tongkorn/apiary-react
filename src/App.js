@@ -72,6 +72,9 @@ function App() {
           </Switch>
           <ScrollToTop />
           <Switch>
+            <Route exact path='/'>
+              <Main onCtaClick={handleSetFirstOpen} />
+            </Route>
             <Route exact path='/professional/webdev'>
               <Webdev onCtaClick={handleSetFirstOpen} />
             </Route>
@@ -84,9 +87,7 @@ function App() {
             <Route exact path='/home'>
               <Main onCtaClick={handleSetFirstOpen} />
             </Route>
-            <Route path='/'>
-              <Main onCtaClick={handleSetFirstOpen} />
-            </Route>
+
           </Switch>
           <Footer />
           {firstOpen ? (
