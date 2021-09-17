@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 function Header({ onCtaClick, page }) {
   const [open, setOpen] = useState(false);
   return (
-    <header className="header" id="nav">
+    <header className="header" id="nav" name="nav">
       <div className="header__content-wrapper">
         <div className="logo">
           <Link to="/home"><img src={logoY} alt="Yandex logo" className="logo__yandex" />

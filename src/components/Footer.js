@@ -10,7 +10,7 @@ function Footer() {
                         <Link to="/#about" className="footer__link footer__text-aboutus">About us</Link>
                     </li>
                     <li>
-                        <a href="#nav" className="footer__link footer__text-totop">Back to top &#8593;</a>
+                        <Link to="#main#nav" className="footer__link footer__text-totop">Back to top &#8593;</Link>
                     </li>
                 </ul>
                 <div className="footer__links-grid">
