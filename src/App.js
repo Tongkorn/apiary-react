@@ -86,8 +86,8 @@ function App() {
             <Main onCtaClick={handleSetFirstOpen} />
           </Route>
           <Route exact path='/'>
-            <Redirect to="/home" />
-            {/* <Main onCtaClick={handleSetFirstOpen} /> */}
+            {/* <Redirect to="/home" /> */}
+            <Main onCtaClick={handleSetFirstOpen} />
           </Route>
           {/* </Switch> */}
           <Footer />
