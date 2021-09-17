@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback } from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import ModalWithForm from "./components/ModalWithForm";
@@ -59,54 +59,48 @@ function App() {
   }, [closeOnEsc]);
 
   return (
-    // <Router>
-      <div className="root">
-        <div className="root__container">
-          <Switch>
-            <Route path='/professional/*'>
-              <Header page="professional" onCtaClick={handleSetFirstOpen} />
-            </Route>
-            <Route path='/'>
-              <Header onCtaClick={handleSetFirstOpen} />
-            </Route>
-          </Switch>
-          <ScrollToTop />
-          {/* <Switch> */}
-
-          <Route exact path='/professional/webdev'>
-            <Webdev onCtaClick={handleSetFirstOpen} />
+    <div className="root">
+      <div className="root__container">
+        <Switch>
+          <Route path='/professional/*'>
+            <Header page="professional" onCtaClick={handleSetFirstOpen} />
           </Route>
-          <Route exact path='/professional/data-analyst'>
-            <DataAnalysis onCtaClick={handleSetFirstOpen} />
+          <Route path='/'>
+            <Header onCtaClick={handleSetFirstOpen} />
           </Route>
-          <Route exact path='/professional/data-science'>
-            <Datasci onCtaClick={handleSetFirstOpen} />
-          </Route>
-          <Route exact path='/home'>
-            <Main onCtaClick={handleSetFirstOpen} />
-          </Route>
-          <Route exact path='/'>
-            {/* <Redirect to="/home" /> */}
-            <Main onCtaClick={handleSetFirstOpen} />
-          </Route>
-          {/* </Switch> */}
-          <Footer />
-          {firstOpen ? (
-            <ModalOverlay
-              onMouseDown={closeOnOverlay}
-              ref={modalref}>
-              <ModalWithForm
-                isOpen={handleSetFirstOpen}
-                isClose={handleSetFirstClose}
-                setFirstOpen={handleSetFirstClose}
-                firstOpen={firstOpen}
-                onSubmit={handleFormSubmit}
-              />
-            </ModalOverlay>
-          ) : null}
-        </div>
+        </Switch>
+        <ScrollToTop />
+        <Route exact path='/professional/webdev'>
+          <Webdev onCtaClick={handleSetFirstOpen} />
+        </Route>
+        <Route exact path='/professional/data-analyst'>
+          <DataAnalysis onCtaClick={handleSetFirstOpen} />
+        </Route>
+        <Route exact path='/professional/data-science'>
+          <Datasci onCtaClick={handleSetFirstOpen} />
+        </Route>
+        <Route exact path='/home'>
+          <Main onCtaClick={handleSetFirstOpen} />
+        </Route>
+        <Route exact path='/'>
+          <Main onCtaClick={handleSetFirstOpen} />
+        </Route>
+        <Footer />
+        {firstOpen ? (
+          <ModalOverlay
+            onMouseDown={closeOnOverlay}
+            ref={modalref}>
+            <ModalWithForm
+              isOpen={handleSetFirstOpen}
+              isClose={handleSetFirstClose}
+              setFirstOpen={handleSetFirstClose}
+              firstOpen={firstOpen}
+              onSubmit={handleFormSubmit}
+            />
+          </ModalOverlay>
+        ) : null}
       </div>
-    // </Router>
+    </div>
   );
 }
 
