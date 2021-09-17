@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback } from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import ModalWithForm from "./components/ModalWithForm";
@@ -71,24 +71,25 @@ function App() {
             </Route>
           </Switch>
           <ScrollToTop />
-          <Switch>
-            <Route exact path='/'>
-              <Main onCtaClick={handleSetFirstOpen} />
-            </Route>
-            <Route exact path='/professional/webdev'>
-              <Webdev onCtaClick={handleSetFirstOpen} />
-            </Route>
-            <Route exact path='/professional/data-analyst'>
-              <DataAnalysis onCtaClick={handleSetFirstOpen} />
-            </Route>
-            <Route exact path='/professional/data-science'>
-              <Datasci onCtaClick={handleSetFirstOpen} />
-            </Route>
-            <Route exact path='/home'>
-              <Main onCtaClick={handleSetFirstOpen} />
-            </Route>
+          {/* <Switch> */}
 
-          </Switch>
+          <Route exact path='/professional/webdev'>
+            <Webdev onCtaClick={handleSetFirstOpen} />
+          </Route>
+          <Route exact path='/professional/data-analyst'>
+            <DataAnalysis onCtaClick={handleSetFirstOpen} />
+          </Route>
+          <Route exact path='/professional/data-science'>
+            <Datasci onCtaClick={handleSetFirstOpen} />
+          </Route>
+          <Route exact path='/home'>
+            <Main onCtaClick={handleSetFirstOpen} />
+          </Route>
+          <Route path='/'>
+            <Redirect to="/home" />
+            {/* <Main onCtaClick={handleSetFirstOpen} /> */}
+          </Route>
+          {/* </Switch> */}
           <Footer />
           {firstOpen ? (
             <ModalOverlay
