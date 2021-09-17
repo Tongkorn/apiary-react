@@ -59,7 +59,7 @@ function App() {
   }, [closeOnEsc]);
 
   return (
-    <Router>
+    // <Router>
       <div className="root">
         <div className="root__container">
           <Switch>
@@ -85,7 +85,7 @@ function App() {
           <Route exact path='/home'>
             <Main onCtaClick={handleSetFirstOpen} />
           </Route>
-          <Route path='/'>
+          <Route exact path='/'>
             <Redirect to="/home" />
             {/* <Main onCtaClick={handleSetFirstOpen} /> */}
           </Route>
@@ -106,7 +106,7 @@ function App() {
           ) : null}
         </div>
       </div>
-    </Router>
+    // </Router>
   );
 }
 
