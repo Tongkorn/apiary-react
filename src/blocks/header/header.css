@@ -15,3 +15,57 @@
     padding-right: 40px;
   }
 }
+
+.menu__hamburger {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu__hamburger-close {
+  display: flex;
+  align-self: flex-end;
+}
+
+.nav__cta {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu__hamburger {
+    display: block;
+  }
+
+  .nav__cta {
+    display: none;
+  }
+  .mobile-wrapper {
+    background: #fff;
+    margin: 10px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 60vh;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: height 5s ease;
+  }
+
+  .mobile-wrapper_opened {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    background: white;
+    height: 567px;
+    margin: 0;
+    color: #000000;
+  }
+}
