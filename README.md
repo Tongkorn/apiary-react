@@ -54,7 +54,7 @@ npm start
 
 ### Roadmap
 
-- [ ] rework on brand logo
+- [ ] rework on brand logo and menu bar
 - [ ] menu toggle on mobile
 - [ ] more details collapse button 
 - [ ] improve web performance
