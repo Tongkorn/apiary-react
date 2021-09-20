@@ -1,16 +1,30 @@
-# Apiary Project | [Project link](https://Tongkorn.github.io/apiary-react)
+# [Apiary landing page](https://Tongkorn.github.io/apiary-react)
 
 ![apiary](https://user-images.githubusercontent.com/33220341/133957466-39eba5ab-3783-4990-bd2a-868abbfe13fe.png)
-Apiary is a project of the employment department of Practicum by Yandex, which works as a career accelerator and providing solutions for companies. <br>
 
 ## Description
 
-The task is to build a landing page to display Practicum's Apiary program, which reflect successful experience and strengths, attracting new companies for cooperation.
-This project repository is the further development version of the original team work version.(https://darkarnold.github.io/apiary-landing-page/)
+Apiary is a project of the employment department of Practicum by Yandex, which works as a career accelerator and providing solutions for companies.
+
+### Objective of Apiary landing page:
+
+Practicum's Apiary program want to share their experience and successful cases with other companies in order to scale their project in the future. For this purpose, they need a landing page, which will 
+reflect their successful experience and strengths, attracting new companies to them for 
+cooperation and sending contacts through form submission.
 
 ### Built With
 
+* HTML5
+* CSS3
+* Javascript
 * [React](https://reactjs.org/) 
+
+### Features
+
+* Display Practicum's Apiary program content and images
+* Form submission with basic form validation
+* Page navigation to Data Analysis, Data Science, Web Developement pages 
+* Animation on scroll
 
 ## Getting Started
 
@@ -47,12 +61,12 @@ npm start
 
 ## Contact
 
-Tongkorn Pawananan - [@LinkedIn](https://www.linkedin.com/in/tpawananan/) - tongkorn.p@gmail.com
+Tongkorn Pawananan - [@LinkedIn](https://www.linkedin.com/in/tpawananan/) - tongkorn.p@gmail.com <br>
 Project Link : [https://Tongkorn.github.io/apiary-react](https://Tongkorn.github.io/apiary-react)
 
 ## License
 
-This project is licensed under the Yandex Bootcamp Student/Data Provider Ltr Agmt June 1, 2021
+This project is licensed under the Yandex Bootcamp Student/Data Provider Ltr Agmt
 
 ## Acknowledgments
 
