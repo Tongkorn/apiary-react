@@ -1,74 +1,63 @@
-# Project Link : [Apiary-react](https://Tongkorn.github.io/apiary-react)
+# Apiary Project | [Project link](https://Tongkorn.github.io/apiary-react)
 
-This is the further development version.
+![apiary](https://user-images.githubusercontent.com/33220341/133957466-39eba5ab-3783-4990-bd2a-868abbfe13fe.png)
+Apiary is a project of the employment department of Practicum by Yandex, which works as a career accelerator and providing solutions for companies. <br>
 
-## Getting Started with Create React App
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The task is to build a landing page to display Practicum's Apiary program, which reflect successful experience and strengths, attracting new companies for cooperation.
+This project repository is the further development version of the original team work version.(https://darkarnold.github.io/apiary-landing-page/)
 
-## Available Scripts
+### Build With
 
-In the project directory, you can run:
+* [React](https://reactjs.org/) 
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* npm packages
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### `npm test`
+### Installing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Tongkorn/apiary-react.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-### `npm run build`
+### Executing program
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Open terminal
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Roadmap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] rework on brand logo
+- [ ] menu toggle on mobile
+- [ ] more details collapse button 
+- [ ] improve web performance
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Tongkorn P. - [@LinkedIn](https://www.linkedin.com/in/tpawananan/) - tongkorn.p@gmail.com
+Project Link : [https://Tongkorn.github.io/apiary-react](https://Tongkorn.github.io/apiary-react)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project is licensed under the Yandex Bootcamp Student/Data Provider Ltr Agmt June 1, 2021
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Acknowledgments
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [styled-components](https://styled-components.com/)
+* [aos](https://michalsnik.github.io/aos/)
+* [GitHub Pages](https://pages.github.com)
+* [react-icons](https://react-icons.github.io/react-icons/)
