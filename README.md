@@ -8,7 +8,7 @@ Apiary is a project of the employment department of Practicum by Yandex, which w
 The task is to build a landing page to display Practicum's Apiary program, which reflect successful experience and strengths, attracting new companies for cooperation.
 This project repository is the further development version of the original team work version.(https://darkarnold.github.io/apiary-landing-page/)
 
-### Build With
+### Built With
 
 * [React](https://reactjs.org/) 
 
@@ -16,7 +16,7 @@ This project repository is the further development version of the original team 
 
 ### Prerequisites
 
-* npm packages
+* npm
   ```sh
   npm install npm@latest -g
   ```
@@ -34,7 +34,6 @@ This project repository is the further development version of the original team 
 
 ### Executing program
 
-* Open terminal
 ```
 npm start
 ```
@@ -48,7 +47,7 @@ npm start
 
 ## Contact
 
-Tongkorn P. - [@LinkedIn](https://www.linkedin.com/in/tpawananan/) - tongkorn.p@gmail.com
+Tongkorn Pawananan - [@LinkedIn](https://www.linkedin.com/in/tpawananan/) - tongkorn.p@gmail.com
 Project Link : [https://Tongkorn.github.io/apiary-react](https://Tongkorn.github.io/apiary-react)
 
 ## License
