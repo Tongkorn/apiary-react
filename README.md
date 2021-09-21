@@ -55,8 +55,9 @@ npm start
 ### Roadmap
 
 - [ ] rework on brand logo and menu bar
-- [ ] menu toggle on mobile
-- [ ] more details collapse button 
+- [ ] add menu toggle on mobile
+- [ ] add '404 page'
+- [ ] add more details collapse button 
 - [ ] improve web performance
 
 ## Contact
